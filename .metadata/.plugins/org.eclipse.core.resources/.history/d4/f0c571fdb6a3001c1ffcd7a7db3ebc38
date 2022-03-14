@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+public class prac3040 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		int sum = 0;
+		
+		try {
+			while((n = System.in.read()) != -1) {
+				sum += (n - 71);				
+			}
+			System.out.println(sum);
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
