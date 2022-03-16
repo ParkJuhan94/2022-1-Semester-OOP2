@@ -1,0 +1,4 @@
+두 try 블럭은 공통적으로 catch {} 에서 return을 시켜주었습니다.
+
+1번 try 블럭(finally 작성)은 return 과 관계없이 finally 구문까지 모두 실행되었습니다.
+2번 try 블럭(finally 미작성)은 return 하면서 비정상 종료(?) 되어서 try 블럭의 전체 코드가 실행되지 않았습니다.
