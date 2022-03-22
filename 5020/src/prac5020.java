@@ -1,5 +1,5 @@
 
-public class Counter {
+class Counter {
 	private int cnt = 0;
 	
 	public void Bump() {
@@ -13,7 +13,10 @@ public class Counter {
 	public void Show() {
 		System.out.println(cnt);
 	}
-	
+}
+
+public class prac5020 {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Counter c = new Counter();
@@ -27,3 +30,5 @@ public class Counter {
 	}
 
 }
+
+
