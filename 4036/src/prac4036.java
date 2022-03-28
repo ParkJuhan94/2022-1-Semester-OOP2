@@ -6,7 +6,6 @@ public class prac4036 {
 		int c;
 
 		while (Character.isWhitespace(c = System.in.read())) {
-			// System.out.println("1");
 			if (c == -1) {
 				return "";
 			}
@@ -14,7 +13,6 @@ public class prac4036 {
 
 		res += (char) c;
 		while (!Character.isWhitespace(c = System.in.read())) {
-			// System.out.println("2");
 			if (c == -1) {
 				return "";
 			}
@@ -24,7 +22,6 @@ public class prac4036 {
 	}
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 
 		String s;
 		s = getNext();
@@ -32,7 +29,5 @@ public class prac4036 {
 			System.out.println(s);
 			s = getNext();
 		}
-	}
-	
-	
+	}	
 }
