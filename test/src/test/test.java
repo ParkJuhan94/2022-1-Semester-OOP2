@@ -16,6 +16,7 @@ public class test{
 		System.out.println("Sum is " + sum);
 
 		while (Scanner.hasNext()) {
+			System.out.println("hasNext들어옴");
 			System.out.println("String " + Scanner.next());
 		}
 	}

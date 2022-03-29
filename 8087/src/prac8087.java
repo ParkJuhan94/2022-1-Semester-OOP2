@@ -16,5 +16,4 @@ public class prac8087 {
 		fun(xx);
 		System.out.println(xx.value);
 	}
-// 0327
 }

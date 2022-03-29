@@ -18,6 +18,7 @@ public class Main {
 			System.out.println("String " + myScanner.next());
 		}
 
+		
 		try {
 			MyScanner myFileScanner = new MyScanner(new FileInputStream("data.txt"));
 			sum = 0; // int sum = 0; 에서 수정

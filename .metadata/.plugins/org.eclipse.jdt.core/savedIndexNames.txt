@@ -1,20 +1,9 @@
 INDEX VERSION 1.131+C:\Users\1004s\OneDrive\Desktop\Repository\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
-4241409686.index
 4061186411.index
-2055707079.index
-2083784610.index
-741711758.index
-1865797976.index
-1697593059.index
-4118613362.index
-4222360429.index
-1796839633.index
-1530048280.index
-1461277793.index
-3840085092.index
 2232941053.index
+4118613362.index
+1865797976.index
+1796839633.index
 2189049316.index
-213469952.index
-1308779808.index
 3271193799.index
-2511346362.index
+3400652567.index
