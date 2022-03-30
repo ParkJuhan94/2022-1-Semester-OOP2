@@ -2,7 +2,7 @@
 public class ExceptionPrac {
 	public static int divide(int a,int b) throws Exception{
 		if(b == 0) {
-			throw (new Exception("Divide"));
+			throw (new Exception("Divide Error"));
 		}
 		return a/b;
 	}
@@ -16,7 +16,7 @@ public class ExceptionPrac {
 			res = divide(3, 0);
 			System.out.println(res);
 		} catch(Exception e) {
-			System.out.println("Error");
+			System.out.println(e.getMessage()); 						
 		}
 	}
 }
