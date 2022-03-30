@@ -18,15 +18,14 @@ public class Stack{
 	private int size;
 	
 	// 삽입
-	public Stack() {
-		Link firstLink = new Link();
-		Link toplLink = new Link();
+	public Stack() {		
 		size = 0;
 	}
 	
 	public void add(int n) {
 		if(isEmpty()) {
 			firstLink = new Link(n, null);
+			topLink = new Link();
 			topLink = firstLink;
 			size++;
 		}else {						

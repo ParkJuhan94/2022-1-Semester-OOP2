@@ -1,12 +1,16 @@
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) throws Exception {
 		
 		Stack stack = new Stack();
-		stack.add(1);
-		stack.add(2);
-		stack.add(3);
+		Scanner sc = new Scanner(System.in);		
+		
+		while(sc.hasNextInt()) {
+			stack.add(sc.nextInt());
+		}
+		
 		while ( !stack.isEmpty() ){		
 		    // top 값을 출력
 			System.out.println(stack.top());
