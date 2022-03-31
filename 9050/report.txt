@@ -1,0 +1,9 @@
+상속받은 PositiveList의
+public void addtoList(int n)는 
+상쉬 클래스 Listd의 addToList 와 철자가 다릅니다. 
+
+Main에서 PositiveList 객체의 addToList를 호출했기 때문에 override한 함수가 아닌
+상위 클래스의 함수가 호출된 것입니다.
+
+@override를 addtoList에 붙여보면 에러메시지가 나옵니다.
+즉, 기존의 override받을 함수와 함수명이 다른 것을 찾아준 것입니다.
