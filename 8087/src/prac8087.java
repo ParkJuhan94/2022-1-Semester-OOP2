@@ -17,3 +17,4 @@ public class prac8087 {
 		System.out.println(xx.value);
 	}
 }
+ 
