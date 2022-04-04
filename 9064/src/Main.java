@@ -24,7 +24,7 @@ class MyLinkedList{
 		this.next = next;
 	}
 	
-	public Boolean isEmpty() {
+	Boolean isEmpty() {
 		return numNode == 0;
 	}
 	
@@ -84,6 +84,12 @@ class MyLinkedList{
 	String removeFront() throws Exception{
 		if(isEmpty()) {
 			throw new Exception("비어있음");
+		}else if(numNode == 1) {
+			cursor = head;
+			head = null;
+			
+			numNode--;
+			return cursor.data;
 		}else {
 			cursor = head;
 			head = head.next;
@@ -98,6 +104,11 @@ class MyLinkedList{
 	void remove(String s) throws Exception{
 		if(isEmpty()) {
 			throw new Exception("비어있음");
+		}else if(numNode == 1) {
+			if(head.data.equals(s)) {
+				head = null;
+				numNode--;
+			}
 		}else {
 			cursor = head;
 			MyLinkedList temp;
@@ -105,19 +116,24 @@ class MyLinkedList{
 			while(cursor.next != null) {
 				if(cursor.data.equals(s)) {
 					temp = cursor.next;
+					
 					cursor.prev.next = cursor.next;
 					cursor.next.prev = cursor.prev;
-					
+									
 					cursor.prev = null;
 					cursor.next = null;
 							
 					cursor = temp;
 					numNode--;
 				}
-				cursor = cursor.next;
+				
+				if(cursor.next != null) {
+					cursor = cursor.next;	
+				}
 			}										
 		}
 	}
+
 	
 	// back 항목을 삭제한다. 없으면 예외를 던진다.
 	String removeBack() throws Exception{
@@ -170,49 +186,50 @@ class MyLinkedList{
 	}
 }
 
+
 public class Main {
 	public static void main(String[] args) {
 		MyLinkedList myList = new MyLinkedList();
 		Scanner myScanner = new Scanner(System.in);
-		
-		while (myScanner.hasNext()){
-			myList.addFront(myScanner.next());	
-		}		
-		
+
+		while (myScanner.hasNext()) {
+			myList.addFront(myScanner.next());
+		}
+
 		myList.addBack("xxx");
 		myList.addBack("yyy");
 		myList.addBack("zzz");
 
 		try {
 			myList.printForward();
-		} catch (Exception e) { 
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 		try {
 			System.out.println("Front: " + myList.peekFront());
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-		
+
 		try {
 			System.out.println("Back: " + myList.peekBack());
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-		
+
 		try {
 			myList.removeFront();
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-		
+
 		try {
 			myList.removeBack();
 		} catch (Exception e1) {
 			System.out.println(e1.getMessage());
 		}
-		
+
 		try {
 			myList.remove("xxx");
 		} catch (Exception e1) {

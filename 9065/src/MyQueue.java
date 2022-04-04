@@ -2,7 +2,7 @@
 public class MyQueue extends MyLinkedList {
 	// 삽입
 	void insert(String s) {
-		super.addFront(s);
+		super.addBack(s);
 	}
 
 	// 제일 먼저 빠져나올 항목의 값을 가져온다.

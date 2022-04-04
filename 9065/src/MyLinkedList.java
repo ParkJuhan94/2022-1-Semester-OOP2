@@ -100,6 +100,11 @@ public class MyLinkedList{
 	void remove(String s) throws Exception{
 		if(isEmpty()) {
 			throw new Exception("비어있음");
+		}else if(numNode == 1) {
+			if(head.data.equals(s)) {
+				head = null;
+				numNode--;
+			}
 		}else {
 			cursor = head;
 			MyLinkedList temp;
@@ -107,19 +112,24 @@ public class MyLinkedList{
 			while(cursor.next != null) {
 				if(cursor.data.equals(s)) {
 					temp = cursor.next;
+					
 					cursor.prev.next = cursor.next;
 					cursor.next.prev = cursor.prev;
-					
+									
 					cursor.prev = null;
 					cursor.next = null;
 							
 					cursor = temp;
 					numNode--;
 				}
-				cursor = cursor.next;
+				
+				if(cursor.next != null) {
+					cursor = cursor.next;	
+				}
 			}										
 		}
 	}
+
 	
 	// back 항목을 삭제한다. 없으면 예외를 던진다.
 	String removeBack() throws Exception{
