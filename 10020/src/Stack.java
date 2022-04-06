@@ -12,15 +12,17 @@ public class Stack{
           Link t = new Link(n, first);
           first = t;
     }
+    
 	public boolean isEmpty(){ 
 		return first==null; 
 		
 	}
+	
     public void pop(){ 
     	if (first != null) 
-    		first = first.next; 
-    	
+    		first = first.next;     	
     }
+    
     public int top(){ 
     	return first.data; 
     }
