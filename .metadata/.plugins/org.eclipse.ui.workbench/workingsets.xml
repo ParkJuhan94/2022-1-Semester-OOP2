@@ -2,5 +2,49 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1646417131061_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1646417131072_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1649235528172_4" label="1-10000" name="1-10000">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8070" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8085" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6060" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4032" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4036" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9020" type="4"/>
+<item elementID="=9060" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9064" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5011" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3180" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3030" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8020" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8071" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8082" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8086" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6070" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6092" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4037" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9010" type="4"/>
+<item elementID="=9050" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9065" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3040" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8010" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8072" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8083" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8087" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ExceptionPrac" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6040" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6080" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6091" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/7001" type="4"/>
+<item elementID="=9066" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5020" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5035" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3050" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6050" type="4"/>
+<item elementID="=9030" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=9067" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5010" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5032" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3200" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3130" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1646417132326_2" label="Window Working Set" name="Aggregate for window 1646417132325"/>
 </workingSetManager>
