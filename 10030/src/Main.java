@@ -8,7 +8,7 @@ class KyoChon{
 	}
 }
 
-class Padak extends KyoChon{
+class Padak {
 	KyoChon k = new KyoChon();
 	
 	public void MakeChicken() throws Exception{
