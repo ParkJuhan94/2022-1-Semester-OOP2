@@ -9,7 +9,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4032" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4036" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9020" type="4"/>
-<item elementID="=9060" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9060" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9064" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5011" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3180" type="4"/>
