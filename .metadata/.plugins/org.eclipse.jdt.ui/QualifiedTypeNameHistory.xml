@@ -26,4 +26,6 @@
     <fullyQualifiedTypeName name="Figure"/>
     <fullyQualifiedTypeName name="Triangle"/>
     <fullyQualifiedTypeName name="Comparer"/>
+    <fullyQualifiedTypeName name="Logger"/>
+    <fullyQualifiedTypeName name="MsgSender"/>
 </qualifiedTypeNameHistroy>
