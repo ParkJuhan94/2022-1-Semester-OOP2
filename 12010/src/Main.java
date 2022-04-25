@@ -1,3 +1,6 @@
+// 클래스 어댑터 (PrintLogger)
+// 비교되는 대상은 object adapter : extends 하지 않고, 객체를 생성해서 시키는 것.
+
 interface Logger{
 	void log(String message);
 }
