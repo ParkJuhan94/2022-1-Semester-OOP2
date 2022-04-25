@@ -13,10 +13,9 @@ class PrintLogger extends Printer implements Logger {
 	@Override
 	public void log(String message) {
 		// TODO Auto-generated method stub
-		super.print(message);
+		print(message);
 	}
-	
-}
+} 
 
 class AtomicPlant{
 	Logger myLogger;
