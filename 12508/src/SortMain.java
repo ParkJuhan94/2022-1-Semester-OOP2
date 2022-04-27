@@ -24,7 +24,6 @@ public class SortMain {
 		mju.sort(new idComparer());
 		mju.print();
 		System.out.println();
-
 	}
 
 }
