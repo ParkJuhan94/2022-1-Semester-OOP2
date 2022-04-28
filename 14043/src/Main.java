@@ -20,8 +20,8 @@ class Rectangle<E> {
 		return "사각형 " + width + " X " + height;
 	}
 	
-	public E area(Multiplier m) {
-		return (E) m.multiply(this.width, this.height);		
+	public E area(Multiplier<E> m) {
+		return m.multiply(this.width, this.height);		
 	}
 }
 	
