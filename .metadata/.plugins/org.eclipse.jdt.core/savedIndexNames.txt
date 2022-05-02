@@ -16,7 +16,6 @@ INDEX VERSION 1.131+C:\Users\1004s\OneDrive\Desktop\Repository\Eclipse\.metadata
 1896597337.index
 1470424361.index
 3877208498.index
-465469243.index
 1269616318.index
 3747555299.index
 370232220.index

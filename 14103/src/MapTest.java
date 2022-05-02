@@ -1,3 +1,34 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class MyMap<K, V>{
+	private K[] key = (K[]) new Object[10000];
+	private V[] val = (V[]) new Object[10000];
+	private int size = 0;	
+	
+	public void put(K i, V string) {
+		// TODO Auto-generated method stub
+		key[size] = i;
+		val[size] = string;		
+		size++;		
+	}
+	
+	public V get(K k) {
+		// TODO Auto-generated method stub		
+		for(int i = 0; i < size; i++) {
+			if((int)key[i] == (int)k) {		
+				return val[i];					
+			}
+		}			
+		return null;
+	}
+	
+	public String size() {
+		// TODO Auto-generated method stub
+		return Integer.toString(this.size);
+	}
+}
+
 public class MapTest {
 	
 	public static void main(String[] args) {
@@ -20,7 +51,7 @@ public class MapTest {
 		long t1 = System.currentTimeMillis();
 		
 		System.out.println("소요시간(ms) = " + (t1-t0));
-		
+/////////////////////////////////////////////////////////////////////////		
 		numCorrect = 0;
 		long t2 = System.currentTimeMillis();
 		MyMap<Integer, String> badMap = new MyMap<>();
@@ -41,7 +72,5 @@ public class MapTest {
 		long t3 = System.currentTimeMillis();
 		
 		System.out.println("소요시간(ms) = " + (t3-t2));
-	
 	}
-
 }

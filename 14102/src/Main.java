@@ -43,6 +43,7 @@ class School<T extends Pet>{
 		}
 	}
 }
+
 public class Main {
 
 	public static void main(String[] args) {
