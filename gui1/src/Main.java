@@ -60,13 +60,12 @@ class Figure {
 	public void draw(Graphics g) {
 		// empty
 	}
-}
+}  
 
 class Rect extends Figure {
 
 	public Rect(String str, int x, int y, int w, int h) {
 		super(str, x, y, w, h);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -81,7 +80,6 @@ class Oval extends Figure {
 
 	public Oval(String str, int x, int y, int w, int h) {
 		super(str, x, y, w, h);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -95,7 +93,6 @@ class Line extends Figure {
 
 	public Line(String str, int x, int y, int w, int h) {
 		super(str, x, y, w, h);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -109,7 +106,6 @@ class StringFig extends Figure {
 
 	public StringFig(String str, int x, int y, int w, int h) {
 		super(str, x, y, w, h);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -122,7 +118,6 @@ class StringFig extends Figure {
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 가능하긴한데 JFrmae 에 없고 MyFrameB 에만 있는 함수는 못 씀
 		// JFrame f = new MyFrameB("첫 윈도 프레임");
 		MyFrame f = new MyFrame("그림판 프레임");
