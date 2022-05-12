@@ -4,21 +4,36 @@ import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
-import MyPanel.MyMouseListener;
 
 class MyPanel extends JPanel {
 	MyFrame myFrame;
 	protected ArrayList<Figure> figList = new ArrayList<>();
-	int drawingMode = 0, startX, startY;
+	int drawingMode = 0, inButton = 0, startX, startY;
 
 	class MyMouseListener implements MouseListener {
 
+		public void setDrawingMode(MouseEvent e) {
+			if (1 < e.getX() && e.getX() < 51 && 1 < e.getY() && e.getY() < 21) {
+				drawingMode = 1;
+				inButton = 1;
+			} else if (51 < e.getX() && e.getX() < 101 && 1 < e.getY() && e.getY() < 21) {
+				drawingMode = 2;
+				inButton = 1;
+			} else if (101 < e.getX() && e.getX() < 151 && 1 < e.getY() && e.getY() < 21) {
+				drawingMode = 3;
+				inButton = 1;
+			}
+		}
+		
 		@Override
 		public void mouseClicked(MouseEvent e) {
 		}
@@ -32,25 +47,31 @@ class MyPanel extends JPanel {
 		@Override
 		public void mouseReleased(MouseEvent e) {
 			if (drawingMode == 0) {
-				if (1 <= e.getX() && e.getX() <= 101 && 1 <= e.getY() && e.getY() <= 51) {
-					drawingMode = 1;
-				} else if (1 <= e.getX() && e.getX() <= 101 && 1 <= e.getY() && e.getY() <= 51) {
-					drawingMode = 2;
-				} else if (1 <= e.getX() && e.getX() <= 101 && 1 <= e.getY() && e.getY() <= 51) {
-					drawingMode = 3;
-				}
+				setDrawingMode(e);
 			} else if (drawingMode == 1) {
-				Figure f = new Rect("", startX, startY, e.getX(), e.getY());
-				figList.add(f);
-				myFrame.repaint();
+				inButton = 0;
+				setDrawingMode(e);
+				if(inButton != 1) {
+					Figure f = new Rect("", startX, startY, e.getX()-startX, e.getY()- startY);
+					figList.add(f);
+					myFrame.repaint();	
+				}												
 			} else if (drawingMode == 2) {
-				Figure f = new Oval("", startX, startY, e.getX(), e.getY());
-				figList.add(f);
-				myFrame.repaint();
+				inButton = 0;
+				setDrawingMode(e);
+				if(inButton != 1) {
+					Figure f = new Oval("", startX, startY, e.getX()-startX, e.getY()- startY);
+					figList.add(f);
+					myFrame.repaint();	
+				}				
 			} else if (drawingMode == 3) {
-				Figure f = new Line("", startX, startY, e.getX(), e.getY());
-				figList.add(f);
-				myFrame.repaint();
+				inButton = 0;
+				setDrawingMode(e);
+				if(inButton != 1) {
+					Figure f = new Line("", startX, startY, e.getX(), e.getY());
+					figList.add(f);
+					myFrame.repaint();
+				}
 			}
 		}
 
@@ -65,20 +86,19 @@ class MyPanel extends JPanel {
 
 	public MyPanel(MyFrame f) {
 		this.myFrame = f;
-		Graphics g = getGraphics();
 		setBackground(new Color(200, 255, 255));
-		g.drawRect(1, 1, 50, 100);
-		g.drawRect(51, 1, 50, 100);
-		g.drawRect(1001, 1, 50, 100);
-		g.drawString("Rect", 1, 50);
-		g.drawString("Oval", 101, 50);
-		g.drawString("Line", 151, 50);
 		addMouseListener(new MyMouseListener());
 	}
 
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
+		g.drawRect(1, 1, 50, 20);
+		g.drawRect(51, 1, 50, 20);
+		g.drawRect(101, 1, 50, 20);
+		g.drawString("Rect", 11, 15);
+		g.drawString("Oval", 61, 15);
+		g.drawString("Line", 111, 15);
 		for (int i = 0; i < figList.size(); i++) {
 			figList.get(i).draw(g);
 		}
@@ -94,21 +114,18 @@ class MyFrame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Font myFont = new Font("굴림체", Font.PLAIN, 32);
 		this.setFont(myFont);
+		
+		
 	}
-
-	public void addFigure(int type, String str, int x, int y, int w, int h) {
-		Figure f = null;
-		if (type == 0) {
-			f = new Rect(str, x, y, w, h);
-		} else if (type == 1) {
-			f = new Oval(str, x, y, w, h);
-		} else if (type == 2) {
-			f = new Line(str, x, y, w, h);
-		} else if (type == 3) {
-			f = new StringFig(str, x, y, w, h);
+	
+	public void img() {
+		BufferedImage img = null; 
+		try {
+			img = ImageIO.read(new File("duke.jpg"));
+		}catch(IOException e) {
+			System.out.println("Cannot open image file.");
 		}
-		figList.add(f);
-		this.repaint();
+				
 	}
 }
 
@@ -166,18 +183,6 @@ class Line extends Figure {
 	}
 }
 
-class StringFig extends Figure {
-
-	public StringFig(String str, int x, int y, int w, int h) {
-		super(str, x, y, w, h);
-	}
-
-	@Override
-	public void draw(Graphics g) {
-		g.drawString(str, x, y);
-	}
-}
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -186,6 +191,5 @@ public class Main {
 		MyFrame f = new MyFrame("그림판 프레임");
 		f.setContentPane(new MyPanel(f));
 		f.setVisible(true);
-
 	}
 }
