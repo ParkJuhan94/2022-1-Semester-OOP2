@@ -47,10 +47,11 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3130" type="4"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1652115424731_5" label="GUI" name="GUI">
-<item elementID="=gui1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Adding JPanel" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=gui2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=13167" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gui1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gui2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=gui3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1652115459710_6" label="10000-20000" name="10000-20000">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/10010" type="4"/>
@@ -90,6 +91,10 @@
 <item elementID="=14050" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=14102" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=16010" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=16022" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=13112" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=13113" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=13114" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1646417132326_2" label="Window Working Set" name="Aggregate for window 1646417132325"/>
 </workingSetManager>
