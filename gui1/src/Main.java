@@ -37,7 +37,6 @@ class MyFrame extends JFrame {
 	// setVisible(true) / resize / component를 다시 그릴 경우 / revalidate() 호출
 	@Override
 	public void paint(Graphics g) {
-		super.paint(g);
 		for (int i = 0; i < figList.size(); i++) {
 			figList.get(i).draw(g);
 		}

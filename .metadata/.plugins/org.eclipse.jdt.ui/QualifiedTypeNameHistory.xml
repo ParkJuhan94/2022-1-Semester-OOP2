@@ -41,16 +41,23 @@
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="MyPanel"/>
-    <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
     <fullyQualifiedTypeName name="MyMouseListener"/>
-    <fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
     <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
     <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="MyButton"/>
-    <fullyQualifiedTypeName name="java.awt.Graphics"/>
     <fullyQualifiedTypeName name="java.awt.Point"/>
+    <fullyQualifiedTypeName name="MainFrame"/>
+    <fullyQualifiedTypeName name="ExternalListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseWheelListener"/>
+    <fullyQualifiedTypeName name="MouseAdapter"/>
+    <fullyQualifiedTypeName name="MainFrame.InternalListener"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.awt.AWTEvent"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
+    <fullyQualifiedTypeName name="java.awt.Graphics"/>
 </qualifiedTypeNameHistroy>
