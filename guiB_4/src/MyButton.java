@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+ import java.awt.Graphics;
 
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -19,7 +19,7 @@ class MyActionListenerOne implements MyActionListenerI{
 	
 	public void setBtn(MyButton b) {
 		this.b = b;
-	}
+	} 
 }
 
 public class MyButton {
