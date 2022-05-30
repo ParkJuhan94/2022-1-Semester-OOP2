@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		ServerSocket ss;
-		ss = new ServerSocket(8001);
+		ss = new ServerSocket(8002);
 		Socket client = ss.accept();
 		System.out.println(client.getInetAddress());
 	}
