@@ -153,3 +153,7 @@
 2022-05-31 00:39:05,260 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2022-05-31 10:02:32,881 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "\usr\bin\git" (in directory "\usr\bin"): CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
 2022-05-31 10:14:46,802 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-06-01 14:22:35,367 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "\usr\bin\git" (in directory "\usr\bin"): CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
+2022-06-01 15:03:27,844 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-06-01 15:03:30,594 [main] WARN  org.eclipse.jgit.util.FS - Cannot run program "\usr\bin\git" (in directory "\usr\bin"): CreateProcess error=2, 지정된 파일을 찾을 수 없습니다
+2022-06-01 18:31:55,216 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
