@@ -105,6 +105,8 @@
 <item elementID="=18011" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=18030" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/18010" type="4"/>
+<item elementID="=17010" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=17015" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1646417132326_2" label="Window Working Set" name="Aggregate for window 1646417132325"/>
 </workingSetManager>
