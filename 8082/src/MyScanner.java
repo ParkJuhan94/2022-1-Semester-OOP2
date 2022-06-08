@@ -3,7 +3,7 @@ import java.io.InputStream;
 
 public class MyScanner {
 	private InputStream s_;
-	private int i, j;
+	private int i;
 	String str = "";
 	char[] strArr;
 	int flag = 0; // 1이면 스캐너 범위 넘어가는 중인 상황.

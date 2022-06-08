@@ -5,7 +5,7 @@ public class prac8083 {
 	}
 
 	public static void main(String[] arg) {
-		Integer xx = 999;
+		Integer xx = new Integer(999);
 		fun(xx);
 		System.out.println(xx);
 	}

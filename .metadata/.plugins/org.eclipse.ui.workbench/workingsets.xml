@@ -7,7 +7,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8085" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6060" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4032" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/4036" type="4"/>
+<item elementID="=4036" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9020" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9060" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9064" type="4"/>
@@ -16,7 +16,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3030" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8020" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8071" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8082" type="4"/>
+<item elementID="=8082" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8086" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6070" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6092" type="4"/>
@@ -27,7 +27,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3040" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8010" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8072" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8083" type="4"/>
+<item elementID="=8083" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/8087" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/ExceptionPrac" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6040" type="4"/>
@@ -37,7 +37,7 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9066" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5020" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/5035" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/3050" type="4"/>
+<item elementID="=3050" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/6050" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9030" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/9067" type="4"/>
